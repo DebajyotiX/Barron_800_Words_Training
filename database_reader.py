@@ -1,14 +1,11 @@
 
 def reader(txt_file):  #file obj as argument
 	word = []
-	# word.clear()
 	meaning = []
-	# meaning.clear()
-
 	trig = 1 
 	wrd = ""
-
 	txt=txt_file.read()
+
 	for c in txt:
 		if c!= "~" and c!= "\n":
 			wrd = wrd + c
