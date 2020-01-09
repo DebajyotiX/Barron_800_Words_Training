@@ -2,7 +2,7 @@ import numpy as np
 import tkinter
 from database_reader import reader
 import time
-
+from shuffler_code import shuffle
 
 
 import random
@@ -31,24 +31,23 @@ amount2 = 12
 amount1=(amount1-1)*10
 amount2=(amount2-1)*10
 rng = range(amount1,amount2)
-print(rng)
+rng = shuffle(rng)
 # random.shuffle(rng)
 time_1 = 2
 time_2 = 1
-
 if choice =="1":
 	for i in rng:
-		print(i+1,".",,": ",meaning[i])
+		print(meaning[i],end="")
 		time.sleep(time_1)
-		print("It was ", word[i],"\n")
+		print("----", word[i],"\n")
 		time.sleep(time_2)
 
 	print("Nice work N*gg@!")
 else:
 	for i in rng:
-		print("Guess: ",word[i])
+		print(word[i],end="")
 		time.sleep(time_1)
-		print("It was ", meaning[i],"\n")
+		print("----", meaning[i],"\n")
 		time.sleep(time_2)		
 	print("Nice work N*gg@!")
 
