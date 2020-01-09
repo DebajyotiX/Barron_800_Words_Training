@@ -38,7 +38,7 @@ time_2 = 1
 
 if choice =="1":
 	for i in rng:
-		print("Guess: ",meaning[i])
+		print(i+1,".",,": ",meaning[i])
 		time.sleep(time_1)
 		print("It was ", word[i],"\n")
 		time.sleep(time_2)
