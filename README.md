@@ -12,8 +12,8 @@ Project files are:
 
 How to use:
 1. Run new_user.py (needs to be run only once for a new user)
-2. Run the barron_quiz_master
-3. repeat 2, until you master the entire word library
+2. Run the barron_quiz_master.py
+3. repeat step-2, until you master the entire word list!!
 
 <you need to have Python 3 or above and numpy installed>
 
