@@ -48,7 +48,7 @@ for i in range(l):
 		print(i+1, ".", meaning[k], end="")
 		input()
 		print(i+1, ".",  word[k],"\n")
-		a = input("??")
+		a = input("Correct? Press 'enter' for YES, Press '0' then 'enter' for NO. ??")
 		if a !="":
 			m2w[k] = m2w[k]+1
 		elif m2w[k] >=1:
@@ -59,7 +59,7 @@ for i in range(l):
 		print(i+1, ".", word[k], end="")
 		input()
 		print(i+1,".", meaning[k], "\n")
-		a = input("??")
+		a = input("Correct? Press 'enter' for YES, Press '0' then 'enter' for NO. ??")
 		if a !="":
 			w2m[k] = w2m[k]+1
 		elif w2m[k] >=1:
@@ -73,11 +73,11 @@ print("\n Check your Happy-lil-Mistakes:")
 for i in range(len(word)):
 	if choice == 1:
 		if w2m[i] >= 1:
-			w2m[i]-=1
+			w2m[i]-=0.5
 			print(word[i],"---",meaning[i])
 	else:
 		if m2w[i] >= 1:
-			m2w[i] -= 1
+			m2w[i] -= 0.5
 			print(meaning[i],"---",word[i])
 
 np.save("w2m.npy", w2m, allow_pickle=True, fix_imports=True)
