@@ -16,4 +16,6 @@ How to use:
 3. repeat 2, until you master the entire word library
 
 <you need to have Python 3 or above and numpy installed>
-Debajyoti: I absolutely loved coding this. I hope it helps too! All the best GRE! May the force be with you!
+
+Debajyoti: I absolutely loved coding this. I hope it helps too! All the best for GRE!
+May the force be with you!
